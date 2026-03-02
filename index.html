@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>素因数分解システム</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-y: scroll;
+        }
+
+        p {
+            margin: 0px 0;
+        }
+        
+         .text1{color:#000000;
+            font-weight: bold;
+            font-size: 40px;
+            font-family:"Yu Mincho", serif;
+            background-color: #349221; 
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+
+         .text2{color:#000000;
+            font-weight: bold;
+            font-size: 20px;
+            font-family:"Yu Mincho", serif;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 30px;
+        }
+
+        
+
+        input {
+            /*width: 80%;        /* 横幅 */
+            padding: 10px;      
+            font-size: 15px; 
+            border: 2px solid #ccc;
+            border-radius: 10px; /* 角を丸く */
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="text1">素因数分解</p>
+    <p class="text2">入力した整数を素因数分解します。</p>
+    <p class="text2">※ 21個以上の素数を因数にもつ自然数は素因数分解できません。
+        （最小の数は2097152です。）</p>
+    <p class="text2">※2147483647より大きい自然数は素因数分解できません。</p>
+
+    <input type="number" id="numberInput">
+    <button onclick="calculate()">計算する</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

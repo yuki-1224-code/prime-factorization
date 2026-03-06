@@ -46,18 +46,32 @@
             margin-top: 10px;
         }
 
+        #resultList div {
+            margin-left: 30px;
+            font-size: 24px;
+            color: #000000;    
+            font-weight: bold;
+            border: 1px solid #000000;
+        }
+
     </style>
 </head>
 <body>
     <p class="text1">素因数分解</p>
-    <p class="text2">入力した整数を素因数分解します。</p>
-    <p class="text2">※ 21個以上の素数を因数にもつ自然数は素因数分解できません。
-        （最小の数は2097152です。）</p>
-    <p class="text2">※2147483647より大きい自然数は素因数分解できません。</p>
+    <p class="text2">素因数分解したい2以上の自然数を入力してください。</p>
+    <p class="text2">※ 非常に大きな自然数を入力すると、
+        計算に時間がかかりブラウザが一時的に固まることがあります。</p>
+
 
     <input type="number" id="numberInput">
     <button onclick="calculate()">計算する</button>
-    
+
+    <div id="resultList"></div>
+
+
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
